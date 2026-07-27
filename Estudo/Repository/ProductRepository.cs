@@ -14,17 +14,8 @@ public class ProductRepository : IProductRepository
     }
     public async Task<List<Product>> ListProducts()
     {
-        try
-        {
-            List<Product> listProducts = await Context.Product.ToListAsync();
-
-            return listProducts;
-        }
-        catch (Exception)
-        {
-            throw;
-        }
-
+        List<Product> listProducts = await Context.Product.ToListAsync();
+        return listProducts;
     }
 
     public async Task AddProduct(Product newProduct)
@@ -36,13 +27,13 @@ public class ProductRepository : IProductRepository
 
     private void ValidateProduct(Product product)
     {
-        if (Context.Product.Any(p => p.Name == product.Name)) 
+        if (Context.Product.Any(p => p.Name == product.Name))
             throw new Exception("O nome desse produto já está sendo usado. Porfavor utilize outro nome");
 
-        if (String.IsNullOrEmpty(product.Name)) 
+        if (String.IsNullOrEmpty(product.Name))
             throw new Exception("O Produto deve ter um nome valido de até 3 caracteres");
 
-        if (product.Price <= 0) 
+        if (product.Price <= 0)
             throw new Exception("O Produto deve ter um preco maior que 0");
     }
 
