@@ -1,5 +1,5 @@
-﻿using Estudo.Class;
-using Estudo.Class.Request;
+﻿using Estudo.Class.DTOs.Products;
+using Estudo.Entities;
 using Estudo.Interfaces;
 using Estudo.Repository;
 

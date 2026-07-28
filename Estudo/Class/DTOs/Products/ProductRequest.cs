@@ -1,4 +1,4 @@
-﻿namespace Estudo.Class.Request;
+﻿namespace Estudo.Class.DTOs.Products;
 
 public class ProductRequest()
 {

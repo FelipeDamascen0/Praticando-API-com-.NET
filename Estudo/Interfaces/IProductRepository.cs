@@ -1,4 +1,4 @@
-﻿using Estudo.Class;
+﻿using Estudo.Entities;
 
 namespace Estudo.Interfaces;
 

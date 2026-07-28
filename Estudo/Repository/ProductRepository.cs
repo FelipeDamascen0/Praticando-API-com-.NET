@@ -1,5 +1,5 @@
 ﻿using Estudo.AppDbContext;
-using Estudo.Class;
+using Estudo.Entities;
 using Estudo.Interfaces;
 using Microsoft.EntityFrameworkCore;
 

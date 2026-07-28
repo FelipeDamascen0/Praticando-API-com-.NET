@@ -1,4 +1,4 @@
-﻿namespace Estudo.Class;
+﻿namespace Estudo.Entities;
 
 public class Product
 {
