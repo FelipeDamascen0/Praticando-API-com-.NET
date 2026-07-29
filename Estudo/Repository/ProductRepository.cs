@@ -22,7 +22,7 @@ public class ProductRepository : IProductRepository
     {
         ValidateProduct(newProduct);
         await Context.Product.AddAsync(newProduct);
-        await Context.SaveChangesAsync();
+        await Context.SaveChangesAsync() ;
     }
 
     private void ValidateProduct(Product product)
